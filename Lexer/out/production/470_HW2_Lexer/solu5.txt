@@ -1,0 +1,12 @@
+<FUNC :1:1> <<symbol table entity [0, "main"]>><ID, 0 :1:6><TYPEOF :1:10><INT :1:12>  <FUNCRET :1:17> <INT :1:20>
+<BEGIN :2:1>
+    <<symbol table entity [1, "a"]>><ID, 1 :3:5> <ASSIGN :3:7> <INT_VALUE, 1 :3:10><SEMI :3:11>
+    <<symbol table entity [2, "b"]>><ID, 2 :4:5> <ASSIGN :4:7> <ID, 1 :4:10> <OP, + :4:12> <INT_VALUE, 2 :4:14><SEMI :4:15>
+    <<symbol table entity [3, "c"]>><ID, 3 :5:5> <ASSIGN :5:7> <INT_VALUE, 3 :5:10> <OP, * :5:12> <ID, 2 :5:14>
+      <OP, + :6:7> <FLOAT_VALUE, 12.3 :6:9><SEMI :6:13> // hello
+<!--
+    b := a + 4; % hello
+    c := a + b; // hello
+-->
+    <PRINT :11:5> <ID, 3 :11:11><SEMI :11:12>
+<END :12:1>

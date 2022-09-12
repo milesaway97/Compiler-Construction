@@ -1,0 +1,9 @@
+<FUNC :1:1> <<symbol table entity [0, "main"]>><ID, 0 :1:6><TYPEOF :1:10>
+<BEGIN :2:1>
+    <<symbol table entity [1, "a"]>><ID, 1 :3:5> <ASSIGN :3:7> <INT_VALUE, 1 :3:10><SEMI :3:11>
+    <ID, 1 :4:5> <ASSIGN :4:7> <ID, 1 :4:10> <OP, + :4:12> <INT_VALUE, 2 :4:14><SEMI :4:15>
+    <<symbol table entity [2, "b"]>><ID, 2 :5:5> <ASSIGN :5:7> <INT_VALUE, 3 :5:10> <OP, + :5:12> <ID, 1 :5:14><SEMI :5:15>
+    <<symbol table entity [3, "c"]>><ID, 3 :6:5> <ASSIGN :6:7> <ID, 1 :6:10> <OP, + :6:12> <ID, 2 :6:14><SEMI :6:15>
+    <FLOAT_VALUE, 3.14 :7:5> <LBRACKET :7:10> <LPAREN :7:12> <RELOP, <= :7:14> <<symbol table entity [4, "it"]>><ID, 4 :7:17> <IF :7:20> <SEMI :7:23> // nope it then
+    <PRINT :8:5> <ID, 3 :8:11><SEMI :8:12>
+<END :9:1>
